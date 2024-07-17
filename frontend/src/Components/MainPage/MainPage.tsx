@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
 import classes from './styles.module.scss';
 import { fetchTestApi } from '../../apis/test.api';
+import { Menu } from '../Menu/Menu';
 
 interface IMainPageProps {
 
@@ -23,6 +23,6 @@ export const MainPage = (props: IMainPageProps) => {
 	}
 
 	return (<div className={classes.mainPageContainer}>
-		{data}
+		<Menu />
 	</div>)
 }

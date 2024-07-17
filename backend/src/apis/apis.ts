@@ -1,10 +1,8 @@
 import { Router } from "express";
-import { resortsRouter } from './resorts.api';
-import { searchRouter } from "./search.api";
+import { testRouter } from "./test.api";
 
 const mainRouter = Router();
 
-mainRouter.use('/resorts', resortsRouter);
-mainRouter.use('/search', searchRouter);
+mainRouter.use('/test', testRouter);
 
 export { mainRouter };
